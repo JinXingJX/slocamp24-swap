@@ -77,7 +77,7 @@ pub fn send_wanted_tokens_to_maker(ctx: &Context<TakeOffer>) -> Result<()> {
     transfer_token(
         &ctx.accounts.taker_token_account_b,
         &ctx.accounts.maker_token_account_b,
-        &ctx.accounts.offer.token_b_wanted_amout,
+        &ctx.accounts.offer.token_b_wanted_amount,
         &ctx.accounts.token_mint_b,
         &ctx.accounts.taker,
         &ctx.accounts.token_program,
